@@ -1,0 +1,74 @@
+/* includes alternating gray and white with on-hover color */
+
+/* table {
+  position: relative;
+} */
+
+.mystyle {
+  font-size: 12pt; 
+  font-family: Arial;
+  margin-top: 0.5cm;
+  margin-left: 0.5cm;
+  position: relative;
+  border-collapse: collapse;
+  background-color: white;
+  border: none
+}
+
+/* HEADERS */
+/* Only first row/ Headings */ 
+.mystyle thead { 
+  text-align: left;
+  background: #c4cfc0;
+  top: 0cm;
+  margin-inline-start: 1cm;
+  position: sticky;
+  box-shadow: 0 2px 2px -0.35px #4b4b4b;
+  border-block-start-width: 1cm;
+  border-bottom-style: double;
+  border-right-style: double;
+}
+
+/* Merged index columns & Headers */
+.mystyle th { 
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* CELLS */
+td { 
+  text-align: left;
+}
+
+/* Make striped rows */
+.mystyle tbody tr:nth-child(even) td, tr:nth-child(even) :not(th:nth-last-of-type(0)){
+  background: #eeebeb;
+}
+
+/* 
+.mystyle tbody tr:nth-child(even) {
+  background: #e0e0e0;
+} */
+
+.mystyle tbody tr th:nth-last-of-type(2) {
+  background: #eeebeb;
+  text-wrap: wrap;
+}
+
+/* Border colours */
+.mystyle td, th {
+  padding: 10px;
+}
+
+/* .mystyle tr:hover {
+  background: rgb(224, 246, 247);
+  cursor: pointer;
+}
+
+.mystyle td:hover {
+  background: rgb(209, 242, 243);
+  cursor: pointer;
+} */
+
+
+
